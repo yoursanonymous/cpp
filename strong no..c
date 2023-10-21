@@ -1,19 +1,18 @@
 #include <stdio.h>
-
 int main()
 {
-int n,original,rem,fact=1,sum=0;
+int m,original,rem,fact=1,sum=0;
 printf("enter the value of n");
-scanf("%d",&n);
+scanf("%d",&m);
 original=n;
-while(n!=0){
-    rem=n%10;
+while(m!=0){
+    rem=m%10;
     for(int i=1;i<=rem;i++){
         fact=fact*i;
     }
     sum=sum+fact;
     fact=1;
-    n=n/10;
+    m=m/10;
 
 }
 printf("%d\n",sum);
